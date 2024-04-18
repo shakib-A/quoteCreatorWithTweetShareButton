@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>ShakibAghili | Quote Of Day</title>
+</head>
+<body>
+
+    <main class="app">
+        <h1>Quote Of The Day</h1>
+        <div class="quote-container">
+            <div class="quote">
+                <img src="./assets/quotation-mark-right-icon.svg" class="quotaion-mark starting-quote">
+                <p class="quote-text">Do more than dream: work.</p>
+                <img src="./assets/quotation-mark-right-icon.svg" class="quotaion-mark ending-quote">
+            </div>
+            <span class="name">William Arthur Ward</span>
+        </div>
+            <div class="btns">
+                <button onclick="speack()" class="btn"><img class="btn-icon" src="./assets/volume-icon.svg"></button>
+                <button onclick="copyToClipBoard()" class="btn"><img class="btn-icon" src="./assets/copy-svgrepo-com.svg"></button>
+                <a class="btn anchor"><img class="btn-icon" src="./assets/twitter-3-svgrepo-com.svg"></a>
+                <button class="next-quote" onclick="getNewQuote()">New Quote</button>
+            </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
