@@ -13,7 +13,9 @@ const getNewQuote = async () => {
 
 const speack = () => {
     const text = quoteText.innerHTML
+    // holds the text that should be read.
     const utterance = new SpeechSynthesisUtterance(text)
+    // returns a list of available voices
     const voices = speechSynthesis.getVoices()
     utterance.voice = voices[0]
     speechSynthesis.speak(utterance)
